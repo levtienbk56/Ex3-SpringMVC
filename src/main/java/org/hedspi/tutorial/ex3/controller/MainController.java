@@ -55,4 +55,9 @@ public class MainController {
 		return "JsBase"; // definition in tilesFtl-js.xml
 	}
 	
+	@RequestMapping(value = { "/lesson-jquery" }, method = RequestMethod.GET)
+	public String lessonJQuery() {
+		return "JQueryBase"; // definition in tilesFtl-js.xml
+	}
+	
 }

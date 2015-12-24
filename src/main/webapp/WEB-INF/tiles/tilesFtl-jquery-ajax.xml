@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="JQueryBase" extends="baseLayout">
+        <put-attribute name="title" value="lession JQuery" />
+		<put-attribute name="menu" 
+		    value="/WEB-INF/views/custom/jquery-ajax/menu.ftl"  type="freemarker"/>
+		<put-attribute name="body" 
+		    value="/WEB-INF/views/custom/jquery-ajax/intro.ftl" />
+	</definition>
+    
+	<definition name="AjaxGetJsonPage" extends="JQueryBase">
+		<put-attribute name="title" value="ajax get json example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/jquery-ajax/ajaxGetJson.ftl" type="freemarker" />
+	</definition>
+	
+	<definition name="AjaxPostPage" extends="JQueryBase">
+		<put-attribute name="title" value="ajax post example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/jquery-ajax/ajaxPost.ftl" type="freemarker" />
+	</definition>
+	
+	<definition name="JQueryAnimatePage" extends="JQueryBase">
+		<put-attribute name="title" value="jquery animate example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/jquery-ajax/animate.ftl" type="freemarker" />
+	</definition>
+	
+</tiles-definitions>

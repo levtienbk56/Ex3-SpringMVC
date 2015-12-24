@@ -15,6 +15,7 @@
             <li><a href="lesson-css">CSS</a></li>
             <li><a href="lesson-sql">POSTGRES</a></li>
             <li><a href="lesson-js">JS</a></li> 
+            <li><a href="lesson-jquery">JQuery-Ajax</a></li> 
           </ul>
         </li>
         <li><a href="about">About</a></li>
