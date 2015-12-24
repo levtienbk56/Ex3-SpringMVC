@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="JsBase" extends="baseLayout">
+        <put-attribute name="title" value="lession javascript" />
+		<put-attribute name="menu" 
+		    value="/WEB-INF/views/custom/js/menu.ftl"  type="freemarker"/>
+		<put-attribute name="body" value="/WEB-INF/views/custom/js/intro.ftl" />
+	</definition>
+	
+	<!-- validate example -->
+	<definition name="JsValidatePage" extends="JsBase">
+		<put-attribute name="title" value="JavaScript validate example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/js/validate.ftl" type="freemarker" />
+	</definition>
+    
+	<!-- object example -->
+	<definition name="JsObjectPage" extends="JsBase">
+		<put-attribute name="title" value="JavaScript object example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/js/object.ftl" type="freemarker" />
+	</definition>
+	
+	<!-- object example -->
+	<definition name="JsFunctionsPage" extends="JsBase">
+		<put-attribute name="title" value="JavaScript function example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/js/functions.ftl" type="freemarker" />
+	</definition>
+
+	<!-- cookie example -->
+	<definition name="JsCookiePage" extends="JsBase">
+		<put-attribute name="title" value="JavaScript Cookie example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/js/cookie.ftl" type="freemarker" />
+	</definition>
+	
+	<!-- DOM example -->
+	<definition name="JsDomPage" extends="JsBase">
+		<put-attribute name="title" value="JavaScript DOM example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/js/dom.ftl" type="freemarker" />
+	</definition>
+
+	
+</tiles-definitions>

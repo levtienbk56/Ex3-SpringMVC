@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="HtmlBase" extends="baseLayout">
+        <put-attribute name="title" value="lession HTML" />
+		<put-attribute name="menu" 
+		    value="/WEB-INF/views/custom/html/menu.ftl"  type="freemarker"/>
+		<put-attribute name="body" value="" />
+	</definition>
+    
+	<!-- paragraph example -->
+	<definition name="ParagraphPage" extends="HtmlBase">
+		<put-attribute name="title" value="paragraph example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/html/paragraph.ftl" type="freemarker" />
+	</definition>
+
+	<!-- table example -->
+	<definition name="TablePage" extends="HtmlBase">
+		<put-attribute name="title" value="table example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/html/table.ftl" type="freemarker" />
+	</definition>
+
+	<!-- image example -->
+	<definition name="ImagePage" extends="HtmlBase">
+		<put-attribute name="title" value="image example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/html/image.ftl" type="freemarker" />
+	</definition>
+	
+	<!-- iframe example -->
+	<definition name="IframePage" extends="HtmlBase">
+		<put-attribute name="title" value="iframe example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/html/iframe.ftl" type="freemarker" />
+	</definition>
+
+</tiles-definitions>

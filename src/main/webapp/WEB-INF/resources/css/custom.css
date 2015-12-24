@@ -1,0 +1,30 @@
+#header {
+    text-align:center;
+    background-color:black;
+    color:blue; 
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:15%;
+    float:left;
+    padding:5px;	      
+}
+#nav ul{
+	list-style-type:none;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	font-size: 200%;
+}
+#section {
+    width:70%;
+    float:left;
+    padding:20px;	 	 
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+}

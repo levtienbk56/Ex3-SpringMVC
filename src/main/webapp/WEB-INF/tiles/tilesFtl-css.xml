@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="CssBase" extends="baseLayout">
+        <put-attribute name="title" value="lession css" />
+		<put-attribute name="menu" 
+		    value="/WEB-INF/views/custom/css/menu.ftl"  type="freemarker"/>
+		<put-attribute name="body" value="" />
+	</definition>
+    
+	<!-- paragraph example -->
+	<definition name="CssTextPage" extends="CssBase">
+		<put-attribute name="title" value="css text example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/css/text.ftl" type="freemarker" />
+	</definition>
+
+	<!-- table example -->
+	<definition name="CssListPage" extends="CssBase">
+		<put-attribute name="title" value="css list example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/css/list.ftl" type="freemarker" />
+	</definition>
+	
+	<!-- iframe example -->
+	<definition name="CssTablePage" extends="CssBase">
+		<put-attribute name="title" value="css table example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/css/table.ftl" type="freemarker" />
+	</definition>
+
+	<!-- image example -->
+	<definition name="CssImagePage" extends="CssBase">
+		<put-attribute name="title" value="css image example" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/custom/css/image.ftl" type="freemarker" />
+	</definition>
+	
+</tiles-definitions>
